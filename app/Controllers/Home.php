@@ -6,7 +6,7 @@ class Home extends BaseController
 {
     public function index(): string
     { //define("ENVIRONMENT","development");
-        return view('welcome_message');
+        return view('user/index');
     }
     public function pages()
     {
