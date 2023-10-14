@@ -8,4 +8,8 @@ class Home extends BaseController
     { //define("ENVIRONMENT","development");
         return view('welcome_message');
     }
+    public function pages()
+    {
+        echo "haha";
+    }
 }
