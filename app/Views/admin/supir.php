@@ -10,22 +10,23 @@
                         <th scope="col">#</th>
                         <th scope="col">Nama</th>
                         <th scope="col">No HP</th>
-                        <th scope="col">Action</th>
                         <th scope="col">Foto</th>
+                        <th scope="col">Action</th>
 
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <th scope="row">1</th>
-                        <td>Mark</td>
+                        <td>Allen</td>
                         <td>Otto</td>
-                        <td>@mdo</td>
+                        <td> <img src="/img/driver_pic/Allen.jpg" alt="" class="driver_pic"> </td>
                         <td>
                             <a href="" class="btn btn-success"> Edit</a>
                             <a href="" class="btn btn-danger"> Hapus</a>
                         </td>
                     </tr>
+
                     <tr>
                         <th scope="row">2</th>
                         <td>Jacob</td>
