@@ -8,10 +8,10 @@
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Nama</th>
-                        <th scope="col">No HP</th>
+                        <th scope="col">Nama Mobil</th>
+                        <th scope="col">Kapasitas</th>
                         <th scope="col">Foto</th>
-                        <th scope="col">Action</th>
+                        <th scope="col">Detail</th>
 
                     </tr>
                 </thead>
@@ -26,15 +26,16 @@
                             <a href="" class="btn btn-danger"> Hapus</a>
                         </td>
                     </tr>
-                    <?php foreach ($driver as $dr) : ?>
+                    <?php foreach ($mobil as $mbl) : ?>
                         <tr>
                             <th scope="row">2</th>
-                            <td><?= $dr['nama']; ?></td>
-                            <td><?= $dr['no_telp']; ?></td>
-                            <td> <img src="/img/driver_pic/<?= $dr['foto']; ?>" alt="" class="driver_pic"> </td>
+                            <td><?= $mbl['merk_mobil'];
+                                echo " "; ?><?= $mbl['jenis_mobil']; ?></td>
+                            <td><?= $mbl['jml_penumpang']; ?></td>
+                            <td> <img src="/img/mobil_pic/<?= $mbl['foto_1']; ?>" alt="" class="driver_pic"> </td>
                             <td>
-                                <a href="" class="btn btn-success"> Edit</a>
-                                <a href="" class="btn btn-danger"> Hapus</a>
+                                <a href="/mobil/<?= $mbl['id_mobil']; ?>" class="btn btn-success"> Detail</a>
+
                             </td>
                         </tr>
                     <?php endforeach; ?>
